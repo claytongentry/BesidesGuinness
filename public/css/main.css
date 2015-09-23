@@ -1,0 +1,116 @@
+html, body {
+  background-color: #FE9156;
+}
+
+.page {
+  height: 100vh;
+  padding-top: 300px;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+h1 {
+  color: white;
+  font-family: 'Open Sans', Impact, sans-serif;
+  font-size: 48px;
+  line-height: 70%;
+}
+
+h3 {
+  font-size: 24px;
+  color: white;
+  font-family: 'Lato', serif;
+}
+
+.head_content {
+  text-align: center;
+}
+
+.results_head {
+  margin-top: 200px;
+}
+
+.beer_image {
+  width: 300px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+<style type="text/css">
+.form-style-4{
+    width: 450px;
+    font-size: 16px;
+    background: inherit;
+    padding: 30px 30px 15px 30px;
+    border: 5px solid white;
+}
+.form-style-4 input[type=submit],
+.form-style-4 input[type=button],
+.form-style-4 input[type=text],
+.form-style-4 input[type=email],
+.form-style-4 textarea,
+.form-style-4 label
+{
+    font-family: 'Lato', Times, serif;
+    font-size: 16px;
+    color: white;
+
+}
+.form-style-4 label {
+    display:block;
+    margin-bottom: 10px;
+}
+.form-style-4 label > span{
+    display: inline-block;
+    float: left;
+    width: 150px;
+}
+.form-style-4 input[type=text],
+.form-style-4 input[type=email]
+{
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed white;
+    width: 275px;
+    outline: none;
+    padding: 0px 0px 0px 0px;
+    font-style: italic;
+}
+.form-style-4 textarea{
+    font-style: italic;
+    padding: 0px 0px 0px 0px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px dashed white;
+    width: 275px;
+    overflow: hidden;
+    resize:none;
+    height:20px;
+}
+
+.form-style-4 textarea:focus,
+.form-style-4 input[type=text]:focus,
+.form-style-4 input[type=email]:focus,
+.form-style-4 input[type=email] :focus
+{
+    border-bottom: 1px dashed white;
+}
+
+.form-style-4 input[type=submit],
+.form-style-4 input[type=button]{
+    margin-top: 25px;
+    background: inherit;
+    border: 1px solid white;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    color: white;
+    transition: 0.2s;
+}
+.form-style-4 input[type=submit]:hover,
+.form-style-4 input[type=button]:hover{
+background: white;
+color: #FE9156;
+transition: 0.2s;
+}
+</style>

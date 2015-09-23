@@ -1,0 +1,20 @@
+{
+  "name": "BesidesGuinness",
+  "version": "1.0.0",
+  "description": "Suggests great Irish beers besides Guinness",
+  "main": "app.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "Besides",
+    "Guinness",
+    "Irish",
+    "beer"
+  ],
+  "author": "Clayton Gentry",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
