@@ -1,52 +1,67 @@
 <!DOCTYPE html>
 <html lang='en'>
-<head>
-  <meta charset='utf-8'>
-  <link type='text/css' rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-  <!--Fonts-->
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-  <link type='text/css' rel='stylesheet' href='./css/main.css'>
-  <title>Besides Guinness: An Arcadia University CLI</title>
-</head>
+    <head>
+        <meta charset='utf-8'>
+        <!--Bootstrap-->
+        <link type='text/css' rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+        <!--Slick-->
+        <link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css"/>
+        <!--Fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+        <link type='text/css' rel='stylesheet' href='./css/main.css'>
+        <title>Besides Guinness: An Arcadia University CLI</title>
+    </head>
 <body>
-  <div class='container-fluid'>
+        <div class='container-fluid'>
 
-    <div class='row'>
-      <div class='col-md-6 page'>
-        <h3 class='text-center'>How about some great Irish beer...</h3>
-        <h1 class='text-center'>BESIDES GUINNESS</h1>
-      </div>
+        <div class='row'>
+          <div class='col-md-6 page'>
+            <h3 class='text-center'>How about some great Irish beer...</h3>
+            <h1 class='text-center'>BESIDES GUINNESS</h1>
+          </div>
 
-      <!--Beer Form-->
-      <div class='col-md-6 page'>
-        <form class="form-style-4" action="" method="post">
-          <label for="field1">
-            <span>Aroma</span><input type="text" name="field1" required="true" />
-          </label>
-          <label for="field2">
-            <span>Appearance</span><input type="text" name="field2" required="true" />
-          </label>
-          <label for="field3">
-            <span>Flavor</span><input type="text" name="field3" required="true" />
-          </label>
-          <label for="field4">
-            <span>Mouthfeel</span><input type="text" name="field3" required="true" />
-          </label>
-          <label for="field5">
-            <span>Ingredients</span><input type="text" name="field3" required="true" />
-          </label>
-          <label>
-            <input type="submit" value="Have a pint 'o..." />
-          </label>
-        </form>
-      </div>
+          <!--Beer Form-->
+          <div class='col-md-6 page beer-form'>
+              <h3 class='text-center' style='margin-bottom: 20px;'>How do you like it?</h3>
+              <hr/>
+              <div class='form_element color'>
+                <div id='dark'><h3>Dark</h3></div>
+<!--                <div id='light'><img src='images/light.png'/></div>-->
+                <div id='red'><h3>Red</h3></div>
+                <div id='ridiculous'><h3>Ridiculous</h3></div>
+              </div>
+              <div class='form_element flavor'>
+<!--
+                <div class='form_img hoppy'><img src='https://skylinehopshop.files.wordpress.com/2014/09/hops2.jpg'/></div>
+                <div class='form_img malty'><img src='http://beerandwinejournal.com/wp-content/uploads/2013/06/IMG_1676.jpg'/></div>
+                <div class='form_img spicy'><img src='http://homebrewingassistant.com/wp-content/uploads/2013/05/brewers-yeast.jpg'/></div>
+-->
+                  <div><h3>Hoppy</h3></div>
+                  <div><h3>Malty</h3></div>
+                  <div><h3>Spicy</h3></div>
+              </div>
+              <div class='form_element mouthfeel'>
+                <div id='heavy'><h3>Heavy</h3></div>
+                <div id='light'><h3>Light</h3></div>
+              </div>
+              <div class='form_submit' style='margin-top: 50px;' onclick='parseResults()'>
+                <h3>Beer me</h3>
+              </div>
+          </div>
 
-    </div>
-  </div>
-  <!--jQuery-->
-  <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
-  <!--Other scripts-->
-  <script src='/js/beer.js'></script>
-</body>
+        </div>
+        </div>
+
+        <!--jQuery-->
+        <script type='text/javascript' src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+        <script type='text/javscript' src='http://code.jquery.com/jquery-migrate-1.2.1.js'></script>
+        <!--Slick-->
+        <script type='text/javascript' src='plugins/slick/slick.min.js'></script>
+        <!--Other scripts-->
+        <script src='js/form.js'></script>
+        <script src='js/match.js'></script>
+        <script src='js/beer.js'></script>
+    </body>
 </html>
