@@ -3,8 +3,33 @@ html, body {
     padding: 30px;
 }
 
+.btn {
+	background-color: inherit;
+	border: 1px solid white;
+	transition: 0.2s;
+}
+
+.btn:hover {
+	border: #FE9156;
+	background-color: white;
+	color: #FE9156;
+	transition: 0.2s;
+}
+
+.btn:focus {
+	background-color: white;
+	border: 1px solid white;
+	color: #FE9156;
+}
+
+.btn:visited {
+	background-color: white;
+	border: 1px solid white;
+	color: #FE9156;
+}
+
 .page {
-  height: 100vh;
+  height: 80vh;
   padding-top: 250px;
   padding-left: auto;
   padding-right: auto;
@@ -34,6 +59,7 @@ h3 {
 
 .form_element {
     text-align: center;
+    outline: none;
 }
 
 .form_img {
@@ -77,8 +103,16 @@ h3 {
   margin-top: 200px;
 }
 
-.beer_image {
+.pref_image {
   width: 300px;
   margin: 20px;
   border-radius: 15px;
+}
+
+#logo {
+	width: 350px;
+}
+
+.results {
+/*	display: none;*/
 }

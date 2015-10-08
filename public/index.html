@@ -23,11 +23,12 @@
           </div>
 
           <!--Beer Form-->
-          <div class='col-md-6 page beer-form'>
+          <div class='col-md-6 page beer-form' style = 'display: block'>
               <h3 class='text-center' style='margin-bottom: 20px;'>How do you like it?</h3>
               <hr/>
               <div class='form_element color'>
                 <div id='dark'><h3>Dark</h3></div>
+                <div id='light'><h3>Light</h3></div>
 <!--                <div id='light'><img src='images/light.png'/></div>-->
                 <div id='red'><h3>Red</h3></div>
                 <div id='ridiculous'><h3>Ridiculous</h3></div>
@@ -46,22 +47,36 @@
                 <div id='heavy'><h3>Heavy</h3></div>
                 <div id='light'><h3>Light</h3></div>
               </div>
-              <div class='form_submit' style='margin-top: 50px;' onclick='parseResults()'>
+              <div class='form_submit' style='margin-top: 50px;' onclick='main()'>
                 <h3>Beer me</h3>
               </div>
           </div>
+			
+			<!--Results-->
+			<div class='col-md-6 page results' style = 'text-align: center; display: none;'>
+				<h3 style = 'margin-top: -140px; margin-bottom: 25px;'>Sounds like you want some...</h3>
+				<h1 id = 'rec-name' style = 'margin-bottom: 30px; font-size: 36px;'>Porterhouse Oyster Stout</h1>
+				<img id = 'logo' src='images/porterhouse.png'/> 
+				<div class='row'>
+					<div class='col-md-6'>
+						<button class='btn btn-primary'>Nah, another</button>
+					</div>
+					<div class='col-md-6'>
+						<button class='btn btn-primary'>Yes, now</button>
+					</div>
+				</div>
+			</div>
 
         </div>
         </div>
 
         <!--jQuery-->
         <script type='text/javascript' src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
-        <script type='text/javscript' src='http://code.jquery.com/jquery-migrate-1.2.1.js'></script>
+        <script type='text/javscript' src='js/jquery-2.1.0.min.js'></script>
         <!--Slick-->
         <script type='text/javascript' src='plugins/slick/slick.min.js'></script>
         <!--Other scripts-->
-        <script src='js/form.js'></script>
-        <script src='js/match.js'></script>
+		<script src='js/beers.json'></script>
         <script src='js/beer.js'></script>
     </body>
 </html>

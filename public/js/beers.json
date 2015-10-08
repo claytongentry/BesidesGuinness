@@ -1,0 +1,21 @@
+[
+	{
+		"name": "Smithwick's",
+		"color": "red",
+		"flavor": "hoppy",
+		"mouthfeel": "light",
+		"image": "images/smithwicks.png"
+	},
+	{
+		"name": "Ohara's",
+		"color": "red",
+		"flavor": "hoppy",
+		"mouthfeel": "light",
+		"image": "images/smithwicks.png"
+	},
+	{
+		"name": "Porterhouse's Oyster Stout",
+		"color": "dark",
+		"image": "images/smithwicks.png"
+	}
+]
